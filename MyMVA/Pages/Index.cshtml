@@ -5,7 +5,10 @@
     ViewData["Title"] = "Home page";
 }
 
-<h1>This is my machine name: @Configuration["computername"]</h1>
-<h2>My added Configuration value: @Configuration["MyAddedConfigurationVariable"]</h2>
-<h3>My secret Configuration value: @Configuration["MySecretConfigurationValue"]</h3>
+
+<repeat count="6"><p>I will be repeated!!!!</p>
+    <h1>This is my machine name: @Configuration["computername"]</h1>
+    <h2>My added Configuration value: @Configuration["MyAddedConfigurationVariable"]</h2>
+    <h3>My secret Configuration value: @Configuration["MySecretConfigurationValue"]</h3>
+</repeat>
 
