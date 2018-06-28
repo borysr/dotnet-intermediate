@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WebApplication27.Data;
-using WebApplication27.Services;
+using WebApplication28.Data;
+using WebApplication28.Services;
 
-namespace WebApplication27
+namespace WebApplication28
 {
     public class Startup
     {
@@ -38,7 +38,7 @@ namespace WebApplication27
                 options.ClientId = Configuration["Authentication:Microsoft:ApplicationId"];
                 options.ClientSecret = Configuration["Authentication:Microsoft:Password"];
             });
-
+            
             services.AddMvc()
                 .AddRazorPagesOptions(options =>
                 {
